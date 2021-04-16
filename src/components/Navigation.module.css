@@ -1,0 +1,23 @@
+.container {
+  background-color: white;
+  padding: 10px 100px 10px 100px;
+  display: flex;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.logo {
+  height: 110px;
+}
+
+.navlinks {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+  font-weight: 200;
+  font-size: 0.9em;
+  margin-right: 3em;
+}
