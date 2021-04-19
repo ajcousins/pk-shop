@@ -1,20 +1,19 @@
 import "./App.css";
-import { Parallax } from "react-parallax";
 import Navigation from "./components/Navigation";
-import OH from "./assets/00_OH-blue.jpg";
+import Home from "./components/Home";
+import Shop from "./components/Shop";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
     <div>
-      <Navigation />
-      <Parallax bgImage={OH} strength={300}>
-        <div style={{ height: "100vh" }}>
-          <div>Text inside paralax</div>
-        </div>
-      </Parallax>
-      <div style={{ height: "100vh" }}>
-        <div>Section</div>
-      </div>
+      <Router>
+        <Navigation />
+        <Switch>
+          <Route path='/' exact component={Home} />
+          <Route path='/shop' exact component={Shop} />
+        </Switch>
+      </Router>
     </div>
   );
 }

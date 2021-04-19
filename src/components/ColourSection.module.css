@@ -1,0 +1,53 @@
+.backgroundContainer {
+  height: 90vh;
+  padding-top: 10vh;
+  /* text-align: right; */
+}
+
+.leftContainer {
+  /* border: 1pt solid red; */
+  margin-left: 100px;
+  width: 500px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.rightContainer {
+  text-align: right;
+  /* border: 1pt solid red; */
+  margin-right: 100px;
+  margin-left: auto;
+  width: 500px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.heroHeader {
+  color: white;
+  font-weight: 400;
+  font-size: 4em;
+  font-family: "Roboto Condensed", sans-serif;
+  margin-bottom: 0.4em;
+}
+
+p {
+  font-family: "Roboto Condensed", sans-serif;
+  color: white;
+  font-size: 0.9em;
+  font-weight: 100;
+  line-height: 1.6em;
+  margin: 0;
+  margin-bottom: 2em;
+}
+
+.actionCall {
+  color: white;
+  font-weight: 400;
+  font-size: 1.5em;
+  font-family: "Roboto Condensed", sans-serif;
+  margin-bottom: 0.2em;
+}
