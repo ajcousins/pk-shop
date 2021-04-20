@@ -9,7 +9,7 @@ const QuantityIndicator = (props) => {
   }
 
   return (
-    <div className={classes.cart}>
+    <div className={classes.cart} onClick={props.activateCart}>
       <img className={classes.cart} src={cart} alt='cart' />
       {circle}
     </div>

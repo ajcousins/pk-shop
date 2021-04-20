@@ -26,7 +26,10 @@ const Navigation = (props) => {
         </Link>
         <li className={classes.spacer} />
 
-        <QuantityIndicator quantity={props.quantity} />
+        <QuantityIndicator
+          quantity={props.quantity}
+          activateCart={props.cartOn}
+        />
       </ul>
     </nav>
   );

@@ -25,6 +25,7 @@ li {
 .cart {
   height: 20px;
   margin-left: auto;
+  cursor: pointer;
   /* border: 1pt solid red; */
 }
 
@@ -38,7 +39,7 @@ li {
 }
 
 .circle {
-  background-color: rgb(0, 0, 0);
+  background-color: red;
   font-size: 0.8em;
   height: 1.2em;
   width: 1.2em;
