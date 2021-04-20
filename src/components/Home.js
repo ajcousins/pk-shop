@@ -12,7 +12,7 @@ const Home = () => {
         align='left'
         background={OH}
         heading='Hot Sauce'
-        textA="Something's been brewing in East London. No, not a craft beer. It's a Hot Sauce, courtesy of three lads, and a dare that one of them could make a sauce so hot HotheadDwain couldn't eat it. It wasn't that hot, but it was that delicious."
+        textA="Something's been brewing in East London. No, not a craft beer. It's a Hot Sauce, courtesy of three lads, and a dare that one of them could make a sauce so hot Hothead Dwain couldn't eat it. It wasn't that hot, but it was that delicious."
         textB="Pepper Kitchen proudly presents its full flavour Original Hot Sauce. Try it if you dare. It's not that hot!"
         heatScale={thermOH}
         parallaxStrength='200'

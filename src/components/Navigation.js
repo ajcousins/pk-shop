@@ -1,10 +1,11 @@
 import classes from "./Navigation.module.css";
 import React from "react";
 import logo from "../assets/00_PK-logo.svg";
-import cart from "../assets/icons/shoppng-cart.svg";
+import QuantityIndicator from "./QuantityIndicator";
 import { Link } from "react-router-dom";
 
-const Navigation = () => {
+const Navigation = (props) => {
+  console.log("Nav:", props.quantity);
   return (
     <nav className={classes.container}>
       <Link to='/'>
@@ -14,17 +15,18 @@ const Navigation = () => {
         <Link to='/' className={classes.link}>
           <li>HOME</li>
         </Link>
-        <Link className={classes.link}>
+        <Link to='/' className={classes.link}>
           <li>ABOUT</li>
         </Link>
         <Link to='/shop' className={classes.link}>
           <li>SHOP</li>
         </Link>
-        <Link className={classes.link}>
+        <Link to='/' className={classes.link}>
           <li>CONTACT</li>
         </Link>
         <li className={classes.spacer} />
-        <img className={classes.cart} src={cart} />
+
+        <QuantityIndicator quantity={props.quantity} />
       </ul>
     </nav>
   );

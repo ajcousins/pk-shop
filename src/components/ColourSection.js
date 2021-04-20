@@ -12,7 +12,7 @@ const ColourSection = (props) => {
           <h1 className={classes.heroHeader}>{props.heading}</h1>
           <p>{props.textA}</p>
           <p>{props.textB}</p>
-          <img src={props.heatScale} />
+          <img src={props.heatScale} alt='Heat scale' />
           <h2 className={classes.actionCall}>Shop Now!</h2>
         </div>
       </div>

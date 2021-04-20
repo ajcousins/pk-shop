@@ -25,6 +25,7 @@ li {
 .cart {
   height: 20px;
   margin-left: auto;
+  /* border: 1pt solid red; */
 }
 
 .link {
@@ -34,4 +35,17 @@ li {
 
 .link:hover {
   color: rgb(73, 73, 73);
+}
+
+.circle {
+  background-color: rgb(0, 0, 0);
+  font-size: 0.8em;
+  height: 1.2em;
+  width: 1.2em;
+  color: white;
+  border-radius: 100%;
+  text-align: center;
+  position: relative;
+  top: -30px;
+  left: 15px;
 }
