@@ -1,5 +1,6 @@
 import classes from "./Cart.module.css";
 import escape from "../assets/icons/X_01.svg";
+import CartCard from "./CartCard";
 
 const Cart = (props) => {
   return (
@@ -16,6 +17,7 @@ const Cart = (props) => {
               onClick={props.cartOff}
             />
           </div>
+          <CartCard />
         </div>
       </div>
     </div>

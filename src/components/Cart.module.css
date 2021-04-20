@@ -27,7 +27,7 @@
   border: 1pt solid blue;
   display: flex;
   align-items: center;
-  margin-bottom: 1em;
+  margin-bottom: 2em;
 }
 .cartTitle {
   margin: 0;
@@ -37,4 +37,27 @@
 .escape {
   margin-left: auto;
   cursor: pointer;
+}
+
+.cardBackground {
+  border: 1px solid green;
+  display: flex;
+}
+
+.productIcon {
+  height: 70px;
+}
+
+.colA {
+  border: 1px solid magenta;
+}
+.colB {
+  border: 1px solid magenta;
+  margin-left: 30px;
+}
+.colC {
+  border: 1px solid magenta;
+  margin-left: auto;
+  font-weight: 600;
+  font-size: 1.2em;
 }
