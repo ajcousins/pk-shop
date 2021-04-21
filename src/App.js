@@ -13,16 +13,20 @@ function App() {
 
   useEffect(() => {
     console.log("UseEffect");
-  }, []);
+    let cartCopy = [...currentCart];
+    let combinedQty = cartCopy.reduce((prev, cur) => {
+      return prev + cur.qty;
+    }, 0);
+    let qtyOutput = combinedQty > 99 ? 99 : combinedQty;
+    console.log(qtyOutput);
+    setTotalQuantity(qtyOutput);
+  }, [currentCart]);
 
   const addToCart = (product) => {
     let cartCopy = [...currentCart];
     const index = cartCopy.findIndex((item) => item.id === product);
     if (index === -1) cartCopy.push({ id: product, qty: 1 });
     else cartCopy[index].qty++;
-    let quantity = totalQuantity;
-    quantity++;
-    setTotalQuantity(quantity);
     setCart(cartCopy);
     setIsCartActive(true);
   };
@@ -43,7 +47,6 @@ function App() {
   };
 
   const incrementQty = (product) => {
-    console.log("Increment:", product);
     let cartCopy = [...currentCart];
     const index = cartCopy.findIndex((item) => item.id === product);
     if (cartCopy[index].qty < 99) {
@@ -53,7 +56,6 @@ function App() {
   };
 
   const decrementQty = (product) => {
-    console.log("Decrement:", product);
     let cartCopy = [...currentCart];
     const index = cartCopy.findIndex((item) => item.id === product);
     if (cartCopy[index].qty === 1) {

@@ -4,9 +4,6 @@ import CartCard from "./CartCard";
 import Listing from "./Listing";
 
 const Cart = (props) => {
-  // console.log(props.currentCart);
-  // console.log(Listing);
-
   let cart = null;
   if (props.currentCart) {
     cart = props.currentCart.map((item) => {
@@ -14,14 +11,12 @@ const Cart = (props) => {
       let index = Listing.findIndex((product) => product.id === item.id);
       let singleItemPrice = Listing[index].price;
       let subTotal = item.qty * singleItemPrice;
-      // Append subTotal to Obj.
       obj.subTotal = subTotal;
       obj.qty = item.qty;
       obj.title = Listing[index].title;
       obj.img = Listing[index].img;
       return obj;
     });
-    console.log("Cart:", cart);
   }
 
   let itemsInCart = null;
@@ -44,8 +39,6 @@ const Cart = (props) => {
   }
 
   let sumTotal = () => {
-    console.log("Cart:", cart);
-    // return <div>Test</div>;
     const deliveryFee = 1.5;
     let total = `£ ${(
       cart.reduce((prev, cur) => {

@@ -5,7 +5,6 @@ import QuantityIndicator from "./QuantityIndicator";
 import { Link } from "react-router-dom";
 
 const Navigation = (props) => {
-  console.log("Nav:", props.quantity);
   return (
     <nav className={classes.container}>
       <Link to='/'>
