@@ -54,10 +54,16 @@
 .colB {
   border: 1px solid magenta;
   margin-left: 30px;
+  display: flex;
+  flex-direction: column;
 }
 .colC {
   border: 1px solid magenta;
   margin-left: auto;
   font-weight: 600;
   font-size: 1.2em;
+}
+
+.text {
+  margin-top: 0.2em;
 }

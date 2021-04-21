@@ -1,8 +1,17 @@
 import classes from "./Cart.module.css";
 import escape from "../assets/icons/X_01.svg";
 import CartCard from "./CartCard";
+import Listing from "./Listing";
 
 const Cart = (props) => {
+  console.log(props.currentCart);
+  console.log(Listing);
+
+  let cart = null;
+  if (props.currentCart) {
+    // cart = props.currentCart.map();
+  }
+
   return (
     <div>
       <div className={classes.background} onClick={props.cartOff}></div>
@@ -17,7 +26,7 @@ const Cart = (props) => {
               onClick={props.cartOff}
             />
           </div>
-          <CartCard />
+          <CartCard currentCart={props.currentCart} />
         </div>
       </div>
     </div>

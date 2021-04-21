@@ -4,32 +4,27 @@ import Home from "./components/Home";
 import Shop from "./components/Shop";
 import Cart from "./components/Cart";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 function App() {
-  const [currentCart, setCart] = useState({});
+  const [currentCart, setCart] = useState([]);
   const [totalQuantity, setTotalQuantity] = useState(0);
   const [isCartActive, setIsCartActive] = useState(false);
 
-  /* 
-    useEffect(() => {
-    let count = 0;
-    for (let item in currentCart) {
-      count += currentCart[item];
-    }
-    setTotalQuantity(count);
-  }, [currentCart]);
-  */
-
   const addToCart = (product) => {
-    let cartCopy = Object.assign({}, currentCart);
-    if (!cartCopy[product]) cartCopy[product] = 1;
-    else cartCopy[product]++;
-    setCart(cartCopy);
+    let cartCopy = [...currentCart];
+    const index = cartCopy.findIndex((item) => item.id === product);
+
+    // If item doesn't already exist in basket- push single item onto basket.
+    if (index === -1) cartCopy.push({ id: product, qty: 1 });
+    // Otherwise, update quantity of existing item.
+    else cartCopy[index].qty++;
+
     let quantity = totalQuantity;
     quantity++;
     setTotalQuantity(quantity);
-    setIsCartActive(true);
+    console.log(cartCopy);
+    setCart(cartCopy);
   };
 
   const cartOff = () => {
@@ -38,7 +33,7 @@ function App() {
 
   let cart = null;
   if (isCartActive) {
-    cart = <Cart cartOff={cartOff} />;
+    cart = <Cart cartOff={cartOff} currentCart={currentCart} />;
   }
 
   return (
