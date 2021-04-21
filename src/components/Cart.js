@@ -4,12 +4,72 @@ import CartCard from "./CartCard";
 import Listing from "./Listing";
 
 const Cart = (props) => {
-  console.log(props.currentCart);
-  console.log(Listing);
+  // console.log(props.currentCart);
+  // console.log(Listing);
 
   let cart = null;
   if (props.currentCart) {
-    // cart = props.currentCart.map();
+    cart = props.currentCart.map((item) => {
+      let obj = item;
+      let index = Listing.findIndex((product) => product.id === item.id);
+      let singleItemPrice = Listing[index].price;
+      let subTotal = item.qty * singleItemPrice;
+      // Append subTotal to Obj.
+      obj.subTotal = subTotal;
+      obj.qty = item.qty;
+      obj.title = Listing[index].title;
+      obj.img = Listing[index].img;
+      return obj;
+    });
+    console.log("Cart:", cart);
+  }
+
+  let itemsInCart = null;
+  if (cart.length !== 0) {
+    itemsInCart = cart.map((item) => {
+      return (
+        <CartCard
+          productQty={item.qty}
+          key={item.id}
+          id={item.id}
+          productImg={item.img}
+          productTitle={item.title}
+          subTotal={item.subTotal}
+          updateQty={props.updateQty}
+          incrementQty={props.incrementQty}
+          decrementQty={props.decrementQty}
+        />
+      );
+    });
+  }
+
+  let sumTotal = () => {
+    console.log("Cart:", cart);
+    // return <div>Test</div>;
+    const deliveryFee = 1.5;
+    let total = `£ ${(
+      cart.reduce((prev, cur) => {
+        return prev + cur.subTotal;
+      }, 0) + deliveryFee
+    ).toFixed(2)}`;
+    return <div>{total}</div>;
+  };
+
+  let cartFooter = null;
+  if (cart.length !== 0) {
+    cartFooter = (
+      <div>
+        <div className={classes.cardBackground}>
+          <div className={classes.footLabel}>Standard UK Delivery</div>
+          <div className={classes.colC}>£ 1.50</div>
+        </div>
+        <div className={classes.cardBackground}>
+          <div className={classes.footLabel}>Total</div>
+          <div className={classes.colC}>{sumTotal()}</div>
+        </div>
+        <button className={classes.checkout}>Checkout</button>
+      </div>
+    );
   }
 
   return (
@@ -26,7 +86,8 @@ const Cart = (props) => {
               onClick={props.cartOff}
             />
           </div>
-          <CartCard currentCart={props.currentCart} />
+          {itemsInCart}
+          {cartFooter}
         </div>
       </div>
     </div>

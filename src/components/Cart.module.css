@@ -19,12 +19,12 @@
 }
 
 .innerWrapper {
-  border: 1pt solid red;
+  /* border: 1pt solid red; */
   margin: 30px;
 }
 
 .header {
-  border: 1pt solid blue;
+  /* border: 1pt solid blue; */
   display: flex;
   align-items: center;
   margin-bottom: 2em;
@@ -40,7 +40,8 @@
 }
 
 .cardBackground {
-  border: 1px solid green;
+  /* border: 1px solid green; */
+  margin-bottom: 1.5em;
   display: flex;
 }
 
@@ -49,16 +50,16 @@
 }
 
 .colA {
-  border: 1px solid magenta;
+  /* border: 1px solid magenta; */
 }
 .colB {
-  border: 1px solid magenta;
+  /* border: 1px solid magenta; */
   margin-left: 30px;
   display: flex;
   flex-direction: column;
 }
 .colC {
-  border: 1px solid magenta;
+  /* border: 1px solid magenta; */
   margin-left: auto;
   font-weight: 600;
   font-size: 1.2em;
@@ -66,4 +67,30 @@
 
 .text {
   margin-top: 0.2em;
+}
+
+.footLabel {
+  margin-left: 100px;
+}
+
+.checkout {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.2em;
+  background-color: white;
+  border: 1pt solid black;
+  padding: 0.6em 1.3em;
+  outline: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.checkout:hover {
+  background-color: black;
+  color: white;
+}
+
+.checkout:active {
+  background-color: rgb(61, 155, 209);
+  border: 1pt solid rgb(61, 155, 209);
+  color: white;
 }
