@@ -2,7 +2,6 @@ import classes from "./MiniQuant.module.css";
 
 const MiniQuant = (props) => {
   const onChangeHandler = (e) => {
-    // console.log("onChange:", e.target.value);
     props.updateQty(e.target.value, props.id);
   };
 

@@ -4,13 +4,7 @@ import classes from "./Shop.module.css";
 import Listing from "./Listing";
 
 const Shop = (props) => {
-  // console.log(Listing);
-  // Listing.map((item) => {
-  //   console.log(item);
-  // });
-
   const cartAddHandler = (product) => {
-    // console.log("Add to cart", product);
     props.updateCart(product);
   };
 

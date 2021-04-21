@@ -38,27 +38,31 @@ const Cart = (props) => {
     });
   }
 
-  let sumTotal = () => {
-    const deliveryFee = 1.5;
-    let total = `£ ${(
-      cart.reduce((prev, cur) => {
-        return prev + cur.subTotal;
-      }, 0) + deliveryFee
-    ).toFixed(2)}`;
-    return <div>{total}</div>;
+  const subTotal = () => {
+    return cart.reduce((prev, cur) => {
+      return prev + cur.subTotal;
+    }, 0);
   };
+
+  const deliveryFee = (subTotal) => {
+    return Math.ceil(subTotal / 10) * 1.5;
+  };
+
+  const totalOutput = `£ ${(subTotal() + deliveryFee(subTotal())).toFixed(2)}`;
 
   let cartFooter = null;
   if (cart.length !== 0) {
     cartFooter = (
       <div>
         <div className={classes.cardBackground}>
-          <div className={classes.footLabel}>Standard UK Delivery</div>
-          <div className={classes.colC}>£ 1.50</div>
+          <div className={classes.footLabel}>UK Delivery</div>
+          <div className={classes.colC}>{`£ ${deliveryFee(subTotal()).toFixed(
+            2
+          )}`}</div>
         </div>
         <div className={classes.cardBackground}>
           <div className={classes.footLabel}>Total</div>
-          <div className={classes.colC}>{sumTotal()}</div>
+          <div className={classes.colC}>{totalOutput}</div>
         </div>
         <button className={classes.checkout}>Checkout</button>
       </div>

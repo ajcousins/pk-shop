@@ -12,13 +12,11 @@ function App() {
   const [isCartActive, setIsCartActive] = useState(false);
 
   useEffect(() => {
-    console.log("UseEffect");
     let cartCopy = [...currentCart];
     let combinedQty = cartCopy.reduce((prev, cur) => {
       return prev + cur.qty;
     }, 0);
     let qtyOutput = combinedQty > 99 ? 99 : combinedQty;
-    console.log(qtyOutput);
     setTotalQuantity(qtyOutput);
   }, [currentCart]);
 
