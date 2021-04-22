@@ -11,7 +11,7 @@ const Listing = [
     img: productFam,
     price: 20,
     description:
-      "Can’t decide which sauce to choose? Get the whole family of sauces for a discounted price! All Pepper Kitchen sauces are made from natural and fresh ingredients.",
+      "Can’t decide which sauce to choose? Get the whole family of sauces for a discounted price! All Pepper Kitchen sauces are made from natural and fresh ingredients. Blended in London.",
   },
   {
     title: "Hot Sauce",
@@ -29,7 +29,7 @@ const Listing = [
     img: productVH,
     price: 5.5,
     description:
-      "As flavoursome as Pepper Kitchen Hot Sauce, only hotter. Inspired by the London food scene with its of world of culinary wealth, Pepper Kitchen blends fresh ingredients into a London hot sauce that really puts flavour first.",
+      "Loved the flavour of Pepper Kitchen Hot Sauce? Our Very Hot Sauce puts flavour first with the same blend of spices and veg, but with even more pepper for a more intense heat.",
   },
   {
     title: "Dangerously Hot Sauce",
@@ -38,7 +38,7 @@ const Listing = [
     img: productDH,
     price: 7.5,
     description:
-      "Our original flavour, but with the challenging heat of scorpion, reaper, and ghost peppers. Inspired by the London food scene with its of world of culinary wealth.",
+      'Other "Hot" sauces don\'t cut it? Pepper Kitchen Dangerously Hot Sauce builds on our signature flavour for the real pepper lovers. This blend contains scorpion, reaper and ghost peppers. Consider yourself warned!',
   },
   {
     title: "Garlic Sauce",
@@ -47,7 +47,7 @@ const Listing = [
     img: productGA,
     price: 5.5,
     description:
-      "Our original flavour, but with the challenging heat of scorpion, reaper, and ghost peppers. Inspired by the London food scene with its of world of culinary wealth.",
+      "Love flavour, but not a burning tongue? Pepper Kitchen Garlic Sauce puts flavour first. Fresh spices and veg create our original taste, and we've added a garlic twist.",
   },
 ];
 export default Listing;
