@@ -11,13 +11,13 @@ const Navigation = (props) => {
         <img className={classes.logo} src={logo} alt='pepper kitchen logo' />
       </Link>
       <ul className={classes.navlinks}>
-        <Link to='/' className={classes.link}>
+        <Link to='/pk-shop/' className={classes.link}>
           <li>HOME</li>
         </Link>
         {/* <Link to='/' className={classes.link}>
           <li>ABOUT</li>
         </Link> */}
-        <Link to='/shop' className={classes.link}>
+        <Link to='/pk-shop/shop' className={classes.link}>
           <li>SHOP</li>
         </Link>
         {/* <Link to='/' className={classes.link}>

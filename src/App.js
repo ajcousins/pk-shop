@@ -87,8 +87,8 @@ function App() {
           }}
         />
         <Switch>
-          <Route path='/' exact component={Home} />
-          <Route path='/shop' exact>
+          <Route path='/pk-shop/' exact component={Home} />
+          <Route path='/pk-shop/shop' exact>
             <Shop updateCart={addToCart} />
           </Route>
         </Switch>

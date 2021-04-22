@@ -18,7 +18,7 @@ const ColourSection = (props) => {
           <p>{props.textA}</p>
           <p>{props.textB}</p>
           <img src={props.heatScale} alt='Heat scale' />
-          <Link to='/shop' className={classes.link}>
+          <Link to='/pk-shop/shop' className={classes.link}>
             <h2 className={classes.actionCall} onClick={clickHandler}>
               Shop Now!
             </h2>
