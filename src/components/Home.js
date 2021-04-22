@@ -4,6 +4,9 @@ import VH from "../assets/00_VH-orange02.jpg";
 import thermOH from "../assets/20_therm-OH.png";
 import thermVH from "../assets/21_therm-VH.png";
 import WhiteSection from "../components/WhiteSection";
+import burrito from "../assets/30_burrito.jpg";
+import fresh from "../assets/31_fresh.jpg";
+import wsClasses from "./WhiteSection.module.css";
 
 const Home = () => {
   return (
@@ -17,7 +20,12 @@ const Home = () => {
         heatScale={thermOH}
         parallaxStrength='200'
       />
-      <WhiteSection></WhiteSection>
+      <WhiteSection>
+        <img className={wsClasses.element} src={burrito} />
+        <div className={wsClasses.element}>element03</div>
+        <div className={wsClasses.element}>element04</div>
+        <img className={wsClasses.element} src={fresh} />
+      </WhiteSection>
       <ColourSection
         align='right'
         background={VH}
