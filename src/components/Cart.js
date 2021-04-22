@@ -19,7 +19,7 @@ const Cart = (props) => {
     });
   }
 
-  let itemsInCart = null;
+  let itemsInCart = <div>Your cart is empty!</div>;
   if (cart.length !== 0) {
     itemsInCart = cart.map((item) => {
       return (

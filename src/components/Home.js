@@ -29,7 +29,7 @@ const Home = () => {
         parallaxStrength='200'
       />
       <WhiteSection>
-        <img className={wsClasses.element} src={burrito} />
+        <img className={wsClasses.element} src={burrito} alt='burrito' />
         <div className={wsClasses.element}>
           <h3 className={wsClasses.quote}>
             "Pepper Kitchen Hot Sauce #goeswith steak burrito"
@@ -44,7 +44,11 @@ const Home = () => {
             decision. Fresh tasted better, and we Put Flavour First.
           </p>
         </div>
-        <img className={wsClasses.element} src={fresh} />
+        <img
+          className={wsClasses.element}
+          src={fresh}
+          alt='fresh ingredients'
+        />
       </WhiteSection>
       <ColourSection
         align='right'
@@ -62,8 +66,12 @@ const Home = () => {
           </h3>
           <h3 className={wsClasses.quoteRef}>- Erica</h3>
         </div>
-        <img className={wsClasses.element} src={brunch} />
-        <img className={wsClasses.element} src={tinfoil} />
+        <img className={wsClasses.element} src={brunch} alt='brunch plate' />
+        <img
+          className={wsClasses.element}
+          src={tinfoil}
+          alt='tin foil burrito wrappers'
+        />
         <div className={wsClasses.element}>
           <p className={wsClasses.bigInfo}>Handmade in London</p>
           <p className={wsClasses.smlInfo}>
@@ -90,8 +98,16 @@ const Home = () => {
           </h3>
           <h3 className={wsClasses.quoteRef}>- Hothead Dwain</h3>
         </div>
-        <img className={wsClasses.element} src={dwainmel} />
-        <img className={wsClasses.element} src={vegplate} />
+        <img
+          className={wsClasses.element}
+          src={dwainmel}
+          alt='dangerously hot sauce'
+        />
+        <img
+          className={wsClasses.element}
+          src={vegplate}
+          alt='veggie platter'
+        />
         <div className={wsClasses.element}>
           <p className={wsClasses.bigInfo}>Suitable for Vegans</p>
           <p className={wsClasses.smlInfo}>
