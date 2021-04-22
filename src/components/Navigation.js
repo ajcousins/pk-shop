@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const Navigation = (props) => {
   return (
     <nav className={classes.container}>
-      <Link to='/'>
+      <Link to='/pk-shop/'>
         <img className={classes.logo} src={logo} alt='pepper kitchen logo' />
       </Link>
       <ul className={classes.navlinks}>
