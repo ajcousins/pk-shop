@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/pk-shop/static/css/main.38a2d0fd.chunk.css",
+    "main.js": "/pk-shop/static/js/main.a65419e3.chunk.js",
+    "main.js.map": "/pk-shop/static/js/main.a65419e3.chunk.js.map",
+    "runtime-main.js": "/pk-shop/static/js/runtime-main.634f7129.js",
+    "runtime-main.js.map": "/pk-shop/static/js/runtime-main.634f7129.js.map",
+    "static/js/2.1a7ae1df.chunk.js": "/pk-shop/static/js/2.1a7ae1df.chunk.js",
+    "static/js/2.1a7ae1df.chunk.js.map": "/pk-shop/static/js/2.1a7ae1df.chunk.js.map",
+    "static/js/3.a9a3f67e.chunk.js": "/pk-shop/static/js/3.a9a3f67e.chunk.js",
+    "static/js/3.a9a3f67e.chunk.js.map": "/pk-shop/static/js/3.a9a3f67e.chunk.js.map",
+    "index.html": "/pk-shop/index.html",
+    "static/css/main.38a2d0fd.chunk.css.map": "/pk-shop/static/css/main.38a2d0fd.chunk.css.map",
+    "static/js/2.1a7ae1df.chunk.js.LICENSE.txt": "/pk-shop/static/js/2.1a7ae1df.chunk.js.LICENSE.txt",
+    "static/media/00_DH-red.a8fc8d58.jpg": "/pk-shop/static/media/00_DH-red.a8fc8d58.jpg",
+    "static/media/00_GA-green.3c36b751.jpg": "/pk-shop/static/media/00_GA-green.3c36b751.jpg",
+    "static/media/00_OH-blue.49969b40.jpg": "/pk-shop/static/media/00_OH-blue.49969b40.jpg",
+    "static/media/00_PK-logo.3df4decb.svg": "/pk-shop/static/media/00_PK-logo.3df4decb.svg",
+    "static/media/00_VH-orange02.4e559dd2.jpg": "/pk-shop/static/media/00_VH-orange02.4e559dd2.jpg",
+    "static/media/30_burrito.43cbbc6a.jpg": "/pk-shop/static/media/30_burrito.43cbbc6a.jpg",
+    "static/media/31_fresh.43ff346a.jpg": "/pk-shop/static/media/31_fresh.43ff346a.jpg",
+    "static/media/32_brunch.6a049220.jpg": "/pk-shop/static/media/32_brunch.6a049220.jpg",
+    "static/media/33_tinfoil.9462979a.jpg": "/pk-shop/static/media/33_tinfoil.9462979a.jpg",
+    "static/media/34_dwainmel.30618127.jpg": "/pk-shop/static/media/34_dwainmel.30618127.jpg",
+    "static/media/35_vegplate.9cc03ac5.jpg": "/pk-shop/static/media/35_vegplate.9cc03ac5.jpg",
+    "static/media/DH-product-01.7e85448b.jpg": "/pk-shop/static/media/DH-product-01.7e85448b.jpg",
+    "static/media/FAM01-product-01.ccd12ada.jpg": "/pk-shop/static/media/FAM01-product-01.ccd12ada.jpg",
+    "static/media/GA-product-01.cd37776d.jpg": "/pk-shop/static/media/GA-product-01.cd37776d.jpg",
+    "static/media/OH-product-01.a4042105.jpg": "/pk-shop/static/media/OH-product-01.a4042105.jpg",
+    "static/media/VH-product-01.01e6b0ba.jpg": "/pk-shop/static/media/VH-product-01.01e6b0ba.jpg",
+    "static/media/X_01.2f8739cb.svg": "/pk-shop/static/media/X_01.2f8739cb.svg",
+    "static/media/shoppng-cart.385be0a2.svg": "/pk-shop/static/media/shoppng-cart.385be0a2.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.634f7129.js",
+    "static/js/2.1a7ae1df.chunk.js",
+    "static/css/main.38a2d0fd.chunk.css",
+    "static/js/main.a65419e3.chunk.js"
+  ]
+}
