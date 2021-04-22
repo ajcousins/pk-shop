@@ -14,15 +14,15 @@ const Navigation = (props) => {
         <Link to='/' className={classes.link}>
           <li>HOME</li>
         </Link>
-        <Link to='/' className={classes.link}>
+        {/* <Link to='/' className={classes.link}>
           <li>ABOUT</li>
-        </Link>
+        </Link> */}
         <Link to='/shop' className={classes.link}>
           <li>SHOP</li>
         </Link>
-        <Link to='/' className={classes.link}>
+        {/* <Link to='/' className={classes.link}>
           <li>CONTACT</li>
-        </Link>
+        </Link> */}
         <li className={classes.spacer} />
 
         <QuantityIndicator
